@@ -1,0 +1,1 @@
+$("#boton").on("click", function(){$("#semaforo").toggleClass("rojo, verde");$("#semaforo").toggleClass("verde, amarillo");$("#semaforo").toggleClass("amarillo, rojo");});

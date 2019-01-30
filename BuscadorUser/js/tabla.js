@@ -19,4 +19,12 @@ function cargarTabla() {
 function añadirCss() {
     $("th, td").css({ "border": "1px solid gray", "padding": "10px" });
     $("table").css("borderCollapse", "collapse");
+    $("tr:even").not(":first").css("backgroundColor", "#4286f4");
+    $("tr").first().css({ "backgroundColor": "#8e6fed", "color": "white" });
+    $("tr").not(":first").hover(function() {
+        $(this).css("backgroundColor", "#7cef8d");
+    }, function() {
+        $(this).css("backgroundColor", "White");
+        $("tr:even").not(":first").css("backgroundColor", "#4286f4");
+    });
 }

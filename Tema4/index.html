@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica Tema 4: DOM - Facturas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/factura.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/factura.js"></script>
+</head>
+<body>
+    <section id="formulario">
+        <h1>Factura</h1>
+        <form>
+            <div id="campos">
+                <label>Concepto:</label><br>
+                <label>Precio: </label><br>
+                <label>Cantidad: </label><br>
+            </div>
+            <div>
+                <input type="text"><br>
+                <input type="text"><br>
+                <input type="number" value="1"><br>
+            </div>
+            
+            <button>Añadir</button>
+        </form>
+    </section>
+
+    <section id="factura">
+        <div id="cuadro1">
+            <div id="logo">
+                <img src="img/logo1.png">
+            </div>
+            <div>
+                <span>Gimp Software Company</span><br>
+                <span>CIF/NIF: 456875F</span><br>
+                <span>Calle Falsa Nº 123</span><br>
+                <span>CP: 45825, Gimp</span><br>
+                <span>Gimp, Company</span>
+            </div>
+        </div>
+        
+        <div id="cuadro2">
+            <div id="fecha">
+                <span>Numero de factura:</span><br>
+                <span>Fecha factura:</span>
+            </div>
+            <div id="cliente">
+                <span><strong>Cliente:</strong></span><br>
+                <span>Desing SL</span><br>
+                <span>CIF/NIF: 235884L</span><br>
+                <span>Calle Verdadera Nº 321</span><br>
+                <span>CP: 25634, Madrid</span><br>
+                <span>Madrid, España</span>
+            </div>
+        </div>
+
+        <div id="cuadro3">
+            <table class="table table-hover table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Cantidad base</th>
+                        <th>Imponible</th>
+                        <th>I.V.A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Total base imponble:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>I.V.A 21%:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Retención 15%:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><strong>Total:</strong></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

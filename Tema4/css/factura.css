@@ -1,0 +1,58 @@
+body{
+    background-image: url("../img/cubes.png");
+}
+
+#formulario{
+    width: 300px;
+    background: linear-gradient(to bottom, #615e5e 0px, #dfdddd 100%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #ccc;
+    padding: 15px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+}
+
+#campos{
+   float: left;
+   margin-right: 5px;
+}
+
+#factura{
+    width: 900px;
+    height: 700px;
+    background: linear-gradient(to bottom, #ffffff 0px, #bbbaba 100%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #ccc;
+    padding: 50px;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+#logo{
+    float: left;
+}
+
+#cuadro1{
+    float: left;
+    width: 450px;
+}
+
+#cuadro2{
+    float: right;
+}
+
+#cuadro3{
+    clear: both;
+    float: none;
+}
+
+#factura{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 85, 136);
+    text-transform: uppercase;
+}
+
+#fecha{
+    border-bottom: 2px solid #ee4141;
+}

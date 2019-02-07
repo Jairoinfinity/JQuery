@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    var imponibleArray = [];
+    var ivaArray = [];
     var d = new Date();
     $("#fecha span").eq(0).html("Numero de factura: "+d.getFullYear()+"-"+Math.floor(Math.random() * 10000));
     $("#fecha span").eq(1).html("Fecha factura: "+d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear());
@@ -12,6 +14,8 @@ $(document).ready(function(){
             var tr = document.createElement("tr");
             var imponible = (parseFloat(precio)*parseInt(cantidad));
             var iva = "21% "+((imponible * 24)/100)+"€";
+            imponibleArray.push(imponible);
+            ivaArray.push((imponible * 24)/100);
             var td =`
                 <td>${concepto}</td>
                 <td>${cantidad+" x "+precio+"€"}</td>
@@ -25,3 +29,19 @@ $(document).ready(function(){
         }
     });
 });
+
+function totalImponible(array){
+    var total = 0;
+    array.forEach(e => {
+        total += e;
+    });
+    return total;
+}
+
+function totalIva(array){
+    var total = 0;
+    array.forEach(e => {
+        total += e;
+    });
+    return total;
+}

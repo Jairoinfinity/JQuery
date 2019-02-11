@@ -24,11 +24,24 @@ $(document).ready(function(){
             `;
             tr.innerHTML = td;
             $("tbody").prepend(tr);
+            setTotal(imponibleArray,ivaArray);
         }else{
             alert("Introduce los compos necesarios de la factura.");
         }
     });
 });
+function setTotal(imponible, iva){
+    var span = $("tr td span");
+    var tImponible = totalImponible(imponible);
+    var tIva = totalIva(iva);
+    var retencion = (tImponible * 15)/100;
+    var total = (tImponible + tIva)-retencion;
+
+    span.eq(0).html(tImponible+" €");
+    span.eq(1).html(tIva+" €");
+    span.eq(2).html("-"+retencion+" €");
+    span.eq(3).html(total+" €");
+}
 
 function totalImponible(array){
     var total = 0;

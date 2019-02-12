@@ -10,7 +10,7 @@ $(document).ready(function(){
         var precio = $("input").eq(1).val();
         var cantidad = $("input").eq(2).val();
 
-        if(concepto != "" && precio != "" && cantidad != ""){
+        if(concepto != "" && precio != "" && cantidad != "" && parseFloat(precio) > 0 && parseInt(cantidad) > 0){
             var tr = document.createElement("tr");
             var imponible = (parseFloat(precio)*parseInt(cantidad));
             var iva = "21% "+((imponible * 24)/100)+"€";

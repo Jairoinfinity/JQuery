@@ -37,10 +37,10 @@ function setTotal(imponible, iva){
     var retencion = (tImponible * 15)/100;
     var total = (tImponible + tIva)-retencion;
 
-    span.eq(0).html(tImponible+" €");
-    span.eq(1).html(tIva+" €");
-    span.eq(2).html("-"+retencion+" €");
-    span.eq(3).html(total+" €");
+    span.eq(0).html(tImponible.toFixed(2)+" €");
+    span.eq(1).html(tIva.toFixed(2)+" €");
+    span.eq(2).html("-"+retencion.toFixed(2)+" €");
+    span.eq(3).html(total.toFixed(2)+" €");
 }
 
 function totalImponible(array){

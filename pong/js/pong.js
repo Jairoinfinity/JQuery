@@ -11,7 +11,7 @@ function iniciar() {
     var tabla = $("#tablero");
     var partida = true;
     var bto = true;
-    var velocidad = 1000;
+    var velocidad = 100;
     var bola = $("#bola");
     var mira = $("#pala");
 
@@ -25,7 +25,7 @@ function iniciar() {
         //Movimiento de la bola
 
         var y = Math.floor(Math.random() * (479 - 9) + 9) + "px";
-        var x = Math.floor(Math.random() * (979 - 460) + 460) + "px";
+        var x = Math.floor(Math.random() * (979 - 0) + 0) + "px";
 
 
         if (partida) {

@@ -11,7 +11,7 @@ function iniciar() {
     var tabla = $("#tablero");
     var partida = true;
     var bto = true;
-    var velocidad = 100;
+    var velocidad = 1;
     var bola = $("#bola");
     var mira = $("#pala");
 
